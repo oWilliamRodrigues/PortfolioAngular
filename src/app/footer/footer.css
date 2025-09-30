@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--roxo);
+  color: #fff;
+  font-weight: 600;
+  font-size: large;
+}
+
+.footer-right p { 
+  margin-bottom: .25rem; 
+}
+
+.social-icons img { 
+  width: 2.5rem;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover { 
+  transform: scale(1.1);
+}
