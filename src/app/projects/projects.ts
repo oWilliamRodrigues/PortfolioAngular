@@ -69,7 +69,7 @@ export class Projects {
     },
     {
       title: 'Clientes CRUD',
-      description: 'Projeto desenvolvido em C# e MVC, produzindo um aplicativo de gerenciamento de clientes e seus contatos.',
+      description: 'Projeto desenvolvido em ASP.NET MVC, produzindo um aplicativo de gerenciamento de clientes e seus contatos.',
       image: '../../assets/img/MVC.jpg',
       github: 'https://github.com/oWilliamRodrigues/TelaClientes',
       languages: [
