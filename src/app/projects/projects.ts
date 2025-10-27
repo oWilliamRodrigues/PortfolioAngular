@@ -50,7 +50,7 @@ export class Projects {
     },
     {
       title: 'Pixel Adventure',
-      description: 'Projeto feito com Unity C#, criando um jogo de plataforma 2D.',
+      description: 'Jogo de plataforma 2D desenvolvido com Unity e C#, aplicando conceitos de física, animação e design de fases.',
       image: '../../assets/img/pixeladventure.png',
       github: 'https://github.com/oWilliamRodrigues/PixelAdventure',
       languages: [
