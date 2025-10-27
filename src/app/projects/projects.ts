@@ -22,7 +22,7 @@ export class Projects {
   projects: Project[] = [
     {
       title: 'IWantapp',
-      description: 'Projeto criando uma API C#, utilizando .NET 6.',
+      description: 'API em .NET 6 com C#, construída com foco em boas práticas, arquitetura limpa e integração com Entity Framework e Dapper.',
       image: '../../assets/img/api.png',
       github: 'https://github.com/oWilliamRodrigues/IWantApp',
       languages: [
