@@ -34,7 +34,7 @@ export class Projects {
       title: 'Portfolio',
       description: 'Projeto feito com Angular e Bootstrap. Você está aqui agora.',
       image: '../../assets/img/backgroundimage.jpg',
-      github: 'https://github.com/oWilliamRodrigues/Portifolio',
+      github: 'https://github.com/oWilliamRodrigues/PortfolioAngular',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
       ]
