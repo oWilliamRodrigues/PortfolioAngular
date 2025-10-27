@@ -40,12 +40,13 @@ export class Projects {
       ]
     },
     {
-      title: 'PSET Database',
-      description: 'Projeto feito em PostGreSQL, criando um banco de dados do zero, até seu código completo.',
-      image: '../../assets/img/SQL.jpg',
-      github: 'https://github.com/oWilliamRodrigues/uvv_bd1_si1n',
+      title: 'CS Guide',
+      description: 'Aplicação desenvolvida em ASP.NET MVC para gerenciar conteúdos e estrutura de um site, com arquitetura organizada por camadas e foco em manutenção e escalabilidade.',
+      image: '../../assets/img/csguide.png',
+      github: 'https://github.com/oWilliamRodrigues/CsGuide',
       languages: [
-        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg'
       ]
     },
     {
@@ -73,7 +74,8 @@ export class Projects {
       image: '../../assets/img/MVC.jpg',
       github: 'https://github.com/oWilliamRodrigues/TelaClientes',
       languages: [
-        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg'
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg'
       ]
     },
   ];
