@@ -41,7 +41,7 @@ export class Projects {
     },
     {
       title: 'CS Guide',
-      description: 'Aplicação desenvolvida em ASP.NET MVC para gerenciar conteúdos e estrutura de um site, com arquitetura organizada por camadas e foco em manutenção e escalabilidade.',
+      description: 'Aplicação desenvolvida em ASP.NET MVC, produzindo um site estilo wiki, para o jogo "Counter-Strike" com arquitetura organizada por camadas e foco em manutenção e escalabilidade.',
       image: '../../assets/img/csguide.png',
       github: 'https://github.com/oWilliamRodrigues/CsGuide',
       languages: [
@@ -70,8 +70,8 @@ export class Projects {
       ]
     },
     {
-      title: 'Clientes CRUD',
-      description: 'Projeto desenvolvido em ASP.NET MVC, produzindo um aplicativo de gerenciamento de clientes e seus contatos.',
+      title: 'Geen CRUD',
+      description: 'Projeto desenvolvido em ASP.NET MVC, durante capacitação na Geen, produzindo um aplicativo de gerenciamento de clientes e seus contatos.',
       image: '../../assets/img/MVC.jpg',
       github: 'https://github.com/oWilliamRodrigues/TelaClientes',
       languages: [
