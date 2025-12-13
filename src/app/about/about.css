@@ -1,6 +1,6 @@
 .area {
-  padding: 4rem 3rem;
-  min-height: 50vh;
+  padding: 3rem 2rem;
+  min-height: auto;
   color: var(--off-white);
   background-image: linear-gradient(var(--roxo), var(--lilas));
 }
@@ -10,13 +10,15 @@
 }
 
 .Titulo {
-  font-size: 2.4rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
 .AboutMe {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  max-width: 520px;
   font-weight: 500;
 }
 
@@ -30,6 +32,10 @@
 }
 
 @media (max-width: 768px) {
-  .Titulo, .AboutMe { text-align: center; }
-  .area { padding: 3rem 1.5rem; min-height: auto; }
+  .Titulo, .AboutMe { 
+    text-align: center; 
+  }
+  .area { 
+    padding: 3rem 1.5rem; min-height: auto; 
+  }
 }

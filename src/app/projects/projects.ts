@@ -60,12 +60,13 @@ export class Projects {
       ]
     },
     {
-      title: 'Pop\`s Soccer',
-      description: 'Projeto desenvolvido no Alice3 em Java, criando um jogo de pênalti em que o jogador controla o cobrador.',
-      image: '../../assets/img/SoccerAlice.png',
-      github: 'https://github.com/oWilliamRodrigues/soccer_game_alice3',
+      title: '3D Game Adventure',
+      description: ' RPG 3D desenvolvido em Unity com câmera isométrica e sistema de inimigos.',
+      image: '../../assets/img/3DGameAdventure.png',
+      github: 'https://drive.google.com/drive/folders/1uXgPOh27hV3c5tAYy-7PDeOYgKSBYut9',
       languages: [
-        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg'
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg'
       ]
     },
     {

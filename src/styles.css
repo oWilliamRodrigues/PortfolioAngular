@@ -1,6 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-/* Geral */
 :root {
   --off-white: #fbfbfb;
   --aliceblue: #f0f8ff;
@@ -10,6 +9,7 @@
   --deep-lilac: #9b59b6;
   --roxoclaro: #986dff;
   --noite: #111;
+
 }
 
 * {
@@ -22,7 +22,6 @@ a {
   text-decoration: none;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--noite);
