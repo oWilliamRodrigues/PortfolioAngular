@@ -1,7 +1,7 @@
 .projects {
   background-color: transparent;
   width: 100%;
-  padding: 1rem 0; /* Reduzido para economizar espaço */
+  padding: 1rem 0;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 
 .titulo-secao {
-  font-size: 2rem; /* Reduzido */
+  font-size: 2rem;
   font-weight: 700;
   color: var(--text-main);
 }
@@ -19,20 +19,23 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Garante que todos tenham o mesmo tamanho */
-  max-height: 380px; /* Limite para caber no viewport */
+  height: 100%; 
+  max-height: 380px; 
+  will-change: transform, box-shadow;
+  backface-visibility: hidden;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   border-color: var(--roxo);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
 }
 
 .card-img-wrapper {
   position: relative;
   overflow: hidden;
-  height: 120px; /* Reduzido para economizar espaço */
+  height: 120px; 
 }
 
 .card-img-top {
@@ -40,6 +43,7 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .project-card:hover .card-img-top {
@@ -95,7 +99,7 @@
 }
 
 .card-title {
-  font-size: 1.1rem; /* Reduzido */
+  font-size: 1.1rem; 
   font-weight: 600;
   color: var(--text-main);
   margin-bottom: 0.3rem !important;
@@ -103,11 +107,11 @@
 
 .card-text {
   color: var(--text-muted);
-  font-size: 0.8rem; /* Reduzido */
+  font-size: 0.8rem; 
   line-height: 1.3;
   margin-bottom: 0.5rem !important;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limita linhas de texto */
+  -webkit-line-clamp: 2; 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

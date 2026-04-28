@@ -5,11 +5,11 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  background: transparent; /* Remove background image as it's in main-wrapper */
+  background: transparent;
 }
 
 .overlay {
-  display: none; /* Remove overlay as we have animated-bg */
+  display: none;
 }
 
 .conteudo {
@@ -23,7 +23,7 @@
   font-weight: 700;
   color: #fff;
   letter-spacing: -1px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Melhora legibilidade */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .titulo2 {
@@ -32,19 +32,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3)); /* Sombra para o gradiente */
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
 }
 
 .subtitulo {
   font-size: 1.5rem;
-  color: #fff; /* Branco puro para brilhar no fundo escuro */
+  color: #fff;
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .texto {
   font-size: 1.25rem;
-  color: #f1f5f9; /* Tom quase branco e nítido */
+  color: #f1f5f9;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
