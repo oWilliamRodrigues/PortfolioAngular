@@ -1,25 +1,31 @@
-<section class="projects px-3 px-md-5">
+<section class="projects section-padding">
   <div class="container">
-    <h2 class="titulo text-center mb-4">Projetos e Linguagens</h2>
+    <div class="text-center mb-5">
+      <h6 class="text-primary text-uppercase fw-bold mb-2">Meu Portfólio</h6>
+      <h2 class="titulo-secao">Projetos em Destaque</h2>
+    </div>
 
     <div class="row g-4">
-      <div class="col-12 col-sm-6 col-lg-4" *ngFor="let project of projects">
-        <div class="card project-card h-100">
-          <img *ngIf="project.image" [src]="project.image" class="card-img-top" [alt]="project.title"/>
-          <div class="card-body text-center">
-            <h5 class="card-title">{{ project.title }}</h5>
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let project of projects; let i = index">
+        <div class="project-card glass-card h-100">
+          <div class="card-img-wrapper">
+            <img *ngIf="project.image" [src]="project.image" class="card-img-top" [alt]="project.title"/>
+            <div class="card-overlay">
+              <a [href]="project.github" target="_blank" class="btn-view">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="github-icon-white"/>
+                Código Fonte
+              </a>
+            </div>
+          </div>
+          <div class="card-body p-4">
+            <h5 class="card-title mb-3">{{ project.title }}</h5>
             <p class="card-text">{{ project.description }}</p>
           </div>
-          <div class="card-footer d-flex align-items-center">
-            <div class="languages d-flex align-items-center">
-              <ng-container *ngFor="let lang of project.languages; let i = index">
-                <img [src]="lang" class="linguagem" alt="lang {{i}}"/>
-              </ng-container>
-            </div>
-            <div class="ms-auto github">
-              <a [href]="project.github" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" class="github-icon" alt="GitHub"/>
-              </a>
+          <div class="card-footer p-4 border-0 bg-transparent mt-auto">
+            <div class="languages d-flex flex-wrap gap-2">
+              <div *ngFor="let lang of project.languages" class="lang-icon-wrapper" [title]="lang">
+                <img [src]="lang" class="linguagem" alt="Language icon"/>
+              </div>
             </div>
           </div>
         </div>

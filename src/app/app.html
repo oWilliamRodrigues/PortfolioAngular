@@ -1,6 +1,16 @@
-<div>
-  <app-home></app-home>
-  <app-about></app-about>
-  <app-projects></app-projects>
-  <app-footer></app-footer>
+<div class="main-wrapper">
+  <div class="animated-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <app-navbar (sectionChanged)="onSectionChange($event)" [activeSection]="activeSection"></app-navbar>
+
+  <main class="content-container" [@sectionAnimation]="activeSection">
+    <app-home *ngIf="activeSection === 'home'" (navigate)="onSectionChange($event)" class="view-section"></app-home>
+    <app-about *ngIf="activeSection === 'about'" class="view-section"></app-about>
+    <app-projects *ngIf="activeSection === 'projects'" class="view-section"></app-projects>
+    <app-footer *ngIf="activeSection === 'contact'" class="view-section"></app-footer>
+  </main>
 </div>

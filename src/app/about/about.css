@@ -1,41 +1,86 @@
-.area {
-  padding: 3rem 2rem;
-  min-height: auto;
-  color: var(--off-white);
-  background-image: linear-gradient(var(--roxo), var(--lilas));
+.about {
+  background-color: transparent;
+  color: var(--text-main);
+  width: 100%;
+  padding: 2rem 0;
 }
 
-.Sobre { 
-  padding: 1rem; 
+.about-image-wrapper {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.foto {
+  border-radius: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.image-experience {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  padding: 1.5rem;
+  z-index: 2;
+  text-align: center;
+  min-width: 150px;
+}
+
+.exp-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--roxoclaro);
+  line-height: 1;
+}
+
+.exp-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .Titulo {
-  font-size: 1.9rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .AboutMe {
   font-size: 1.1rem;
-  line-height: 1.65;
-  max-width: 520px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.skill-tag {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  color: var(--text-main);
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.foto {
-  width: 22rem;
-  height: auto;
-  border: 20px double var(--roxo);
-  border-radius: 20px;
-  outline: 6px solid var(--off-white);
-  outline-offset: -13px;
+.skill-tag:hover {
+  background: var(--roxo);
+  border-color: var(--roxo);
+  transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-  .Titulo, .AboutMe { 
-    text-align: center; 
-  }
-  .area { 
-    padding: 3rem 1.5rem; min-height: auto; 
+.text-primary {
+  color: var(--roxoclaro) !important;
+}
+
+@media (max-width: 991px) {
+  .Titulo { font-size: 2rem; }
+  .about-image-wrapper { margin-bottom: 3rem; }
+  .image-experience {
+    bottom: 10px;
+    right: 10px;
   }
 }

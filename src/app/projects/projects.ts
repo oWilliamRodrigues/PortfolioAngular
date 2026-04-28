@@ -21,10 +21,10 @@ interface Project {
 export class Projects {
   projects: Project[] = [
     {
-      title: 'IWantapp',
-      description: 'API em .NET 6 com C#, construída com foco em boas práticas, arquitetura limpa e integração com Entity Framework e Dapper.',
-      image: '../../assets/img/api.png',
-      github: 'https://github.com/oWilliamRodrigues/IWantApp',
+      title: 'MyRecipeBook',
+      description: 'API REST em .NET estruturada com DDD e SOLID. Possui autenticação JWT/Google, integração com Gemini para receitas automáticas e mensageria com Azure Service Bus. Inclui testes automatizados, CI/CD e suporte a MySQL/SQL Server.',
+      image: 'assets/img/api.png',
+      github: 'https://github.com/oWilliamRodrigues/MyRecipeBook',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg'
@@ -32,17 +32,18 @@ export class Projects {
     },
     {
       title: 'Portfolio',
-      description: 'Projeto feito com Angular e Bootstrap. Você está aqui agora.',
-      image: '../../assets/img/backgroundimage.jpg',
+      description: 'Este site! Desenvolvido com Angular 20, Bootstrap 5 e AOS para animações fluidas e design responsivo.',
+      image: 'assets/img/backgroundimage.jpg',
       github: 'https://github.com/oWilliamRodrigues/PortfolioAngular',
       languages: [
-        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+        'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg'
       ]
     },
     {
       title: 'CS Guide',
-      description: 'Aplicação desenvolvida em ASP.NET MVC, produzindo um site estilo wiki, para o jogo "Counter-Strike" com arquitetura organizada por camadas e foco em manutenção e escalabilidade.',
-      image: '../../assets/img/csguide.png',
+      description: 'Wiki especializada para Counter-Strike desenvolvida em ASP.NET MVC, com arquitetura em camadas e escalabilidade.',
+      image: 'assets/img/csguide.png',
       github: 'https://github.com/oWilliamRodrigues/CsGuide',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -51,8 +52,8 @@ export class Projects {
     },
     {
       title: 'Pixel Adventure',
-      description: 'Jogo de plataforma 2D desenvolvido com Unity e C#, aplicando conceitos de física, animação e design de fases.',
-      image: '../../assets/img/pixeladventure.png',
+      description: 'Jogo de plataforma 2D vibrante desenvolvido na Unity, explorando física avançada e animações de personagens.',
+      image: 'assets/img/pixeladventure.png',
       github: 'https://github.com/oWilliamRodrigues/PixelAdventure',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -61,8 +62,8 @@ export class Projects {
     },
     {
       title: '3D Game Adventure',
-      description: ' RPG 3D desenvolvido em Unity com câmera isométrica e sistema de inimigos.',
-      image: '../../assets/img/3DGameAdventure.png',
+      description: 'RPG de ação 3D com câmera isométrica, sistema de combate e IA de inimigos, criado inteiramente na Unity.',
+      image: 'assets/img/3DGameAdventure.png',
       github: 'https://drive.google.com/drive/folders/1uXgPOh27hV3c5tAYy-7PDeOYgKSBYut9',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -71,8 +72,8 @@ export class Projects {
     },
     {
       title: 'Geen CRUD',
-      description: 'Projeto desenvolvido em ASP.NET MVC, durante capacitação na Geen, produzindo um aplicativo de gerenciamento de clientes e seus contatos.',
-      image: '../../assets/img/MVC.jpg',
+      description: 'Sistema de gestão de clientes desenvolvido em ASP.NET MVC, focado em operações CRUD e UX intuitiva.',
+      image: 'assets/img/MVC.jpg',
       github: 'https://github.com/oWilliamRodrigues/TelaClientes',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',

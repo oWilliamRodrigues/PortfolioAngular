@@ -1,15 +1,23 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --secondary: #a855f7;
+  --dark-bg: #0f172a;
+  --dark-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
   --off-white: #fbfbfb;
   --aliceblue: #f0f8ff;
   --uva: #474350;
-  --roxo: #5C47C8;
+  --roxo: #6366f1;
   --lilas: #c8c3d0;
-  --deep-lilac: #9b59b6;
-  --roxoclaro: #986dff;
-  --noite: #111;
-
+  --deep-lilac: #a855f7;
+  --roxoclaro: #8b5cf6;
+  --noite: #0f172a;
 }
 
 * {
@@ -18,8 +26,20 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--noite);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
 a {
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar {
@@ -28,6 +48,25 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--roxo);
+  background: linear-gradient(var(--roxo), var(--deep-lilac));
   border-radius: 4px;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.7); /* Cor sólida mas translúcida para contraste */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
 }
