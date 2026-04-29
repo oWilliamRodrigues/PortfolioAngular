@@ -7,7 +7,7 @@
   --dark-bg: #0f172a;
   --dark-card: #1e293b;
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --text-muted: #cbd5e1;
   --glass: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.1);
   --off-white: #fbfbfb;
@@ -63,6 +63,47 @@ a {
 
 .section-padding {
   padding: 100px 0;
+}
+
+.btn-primary-custom {
+  background: var(--roxo);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary-custom:hover {
+  background: var(--roxoclaro);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid var(--roxo);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-outline-custom:hover {
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-3px);
+  color: white;
 }
 
 @media (max-width: 768px) {

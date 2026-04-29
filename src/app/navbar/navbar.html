@@ -3,11 +3,9 @@
     <a class="navbar-brand fw-bold" (click)="selectSection('home')" style="cursor: pointer;">
       <span class="text-primary">W</span>illiam<span class="text-primary">.</span>
     </a>
-    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    
+    <div class="d-flex align-items-center">
+      <ul class="navbar-nav flex-row mb-0">
         <li class="nav-item">
           <a class="nav-link" [class.active]="activeSection === 'home'" (click)="selectSection('home')" style="cursor: pointer;">Início</a>
         </li>

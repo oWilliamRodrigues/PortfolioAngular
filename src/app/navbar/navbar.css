@@ -23,6 +23,17 @@
   margin: 0 0.5rem;
   cursor: pointer;
   position: relative;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    margin: 0 0.3rem;
+    font-size: 0.75rem;
+  }
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
 }
 
 .nav-link::after {
@@ -61,11 +72,7 @@
 }
 
 @media (max-width: 991px) {
-  .navbar-collapse {
-    background: var(--dark-bg);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    border: 1px solid var(--glass-border);
+  .navbar-nav {
+    flex-direction: row !important;
   }
 }

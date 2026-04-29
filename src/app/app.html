@@ -9,7 +9,7 @@
 
   <main class="content-container" [@sectionAnimation]="activeSection">
     <app-home *ngIf="activeSection === 'home'" (navigate)="onSectionChange($event)" class="view-section"></app-home>
-    <app-about *ngIf="activeSection === 'about'" class="view-section"></app-about>
+    <app-about *ngIf="activeSection === 'about'" (navigate)="onSectionChange($event)" class="view-section"></app-about>
     <app-projects *ngIf="activeSection === 'projects'" class="view-section"></app-projects>
     <app-footer *ngIf="activeSection === 'contact'" class="view-section"></app-footer>
   </main>
