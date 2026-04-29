@@ -54,7 +54,7 @@ export class Projects {
       title: 'Pixel Adventure',
       description: 'Jogo de plataforma 2D vibrante desenvolvido na Unity, explorando física avançada e animações de personagens.',
       image: 'assets/img/pixeladventure.png',
-      github: 'https://github.com/oWilliamRodrigues/PixelAdventure',
+      github: 'https://williamrodrigues.itch.io/pixel-adventure',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg'
@@ -64,7 +64,7 @@ export class Projects {
       title: '3D Game Adventure',
       description: 'RPG de ação 3D com câmera isométrica, sistema de combate e IA de inimigos, criado inteiramente na Unity.',
       image: 'assets/img/3DGameAdventure.png',
-      github: 'https://drive.google.com/drive/folders/1uXgPOh27hV3c5tAYy-7PDeOYgKSBYut9',
+      github: 'https://williamrodrigues.itch.io/3dgameadventure',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg'
