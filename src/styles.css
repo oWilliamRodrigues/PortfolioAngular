@@ -53,9 +53,9 @@ a {
 }
 
 .glass-card {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);

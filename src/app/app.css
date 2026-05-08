@@ -35,12 +35,12 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
-  filter: blur(140px);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 70%);
   border-radius: 50%;
   z-index: 2;
   animation: move 25s infinite alternate ease-in-out;
   display: block;
+  pointer-events: none;
 }
 
 .blob-1 { top: -100px; left: -100px; animation-delay: 0s; }
