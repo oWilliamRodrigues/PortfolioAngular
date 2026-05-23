@@ -1,12 +1,12 @@
-import { Component, EventEmitter, Output } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, EventEmitter, Output, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Home {
   @Output() navigate = new EventEmitter<string>();

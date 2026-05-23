@@ -1,11 +1,12 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [],
   templateUrl: './about.html',
-  styleUrl: './about.css'
+  styleUrl: './about.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class About {
   @Output() navigate = new EventEmitter<string>();

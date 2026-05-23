@@ -1,11 +1,12 @@
+/* ─── Section Wrapper ─────────────────────────────────────────── */
 .footer {
   background-color: transparent;
-  border-top: none;
   color: var(--text-main);
   width: 100%;
   padding: 2rem 0;
 }
 
+/* ─── Header Text ─────────────────────────────────────────────── */
 .footer-title {
   font-size: 2rem;
   font-weight: 700;
@@ -16,6 +17,7 @@
   font-size: 1.1rem;
 }
 
+/* ─── Social Icons ────────────────────────────────────────────── */
 .social-link {
   background: var(--glass);
   border: 1px solid var(--glass-border);
@@ -39,6 +41,7 @@
   height: 24px;
 }
 
+/* ─── Divider & Copyright ─────────────────────────────────────── */
 .footer-divider {
   border-color: var(--glass-border);
   opacity: 0.1;
@@ -49,10 +52,7 @@
   font-size: 0.9rem;
 }
 
-.heart {
-  color: #ef4444;
-}
-
+/* ─── Utilities ───────────────────────────────────────────────── */
 .text-primary {
   color: var(--roxoclaro) !important;
 }

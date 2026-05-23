@@ -1,31 +1,34 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+/* ─── Design Tokens ───────────────────────────────────────────── */
 :root {
-  --primary: #6366f1;
-  --primary-hover: #4f46e5;
-  --secondary: #a855f7;
+  /* Brand colors */
+  --roxo: #6366f1;
+  --roxoclaro: #8b5cf6;
+  --deep-lilac: #a855f7;
+
+  /* Background */
   --dark-bg: #0f172a;
   --dark-card: #1e293b;
+  --noite: #0f172a;
+
+  /* Text */
   --text-main: #f8fafc;
   --text-muted: #cbd5e1;
+
+  /* Glass / borders */
   --glass: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --off-white: #fbfbfb;
-  --aliceblue: #f0f8ff;
-  --uva: #474350;
-  --roxo: #6366f1;
-  --lilas: #c8c3d0;
-  --deep-lilac: #a855f7;
-  --roxoclaro: #8b5cf6;
-  --noite: #0f172a;
 }
 
+/* ─── Reset ───────────────────────────────────────────────────── */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ─── Base ────────────────────────────────────────────────────── */
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--noite);
@@ -42,6 +45,7 @@ a {
   transition: all 0.3s ease;
 }
 
+/* ─── Scrollbar ───────────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 0.5rem;
   background-color: var(--noite);
@@ -52,6 +56,7 @@ a {
   border-radius: 4px;
 }
 
+/* ─── Shared Components ───────────────────────────────────────── */
 .glass-card {
   background: rgba(30, 41, 59, 0.85);
   backdrop-filter: blur(4px);
@@ -65,6 +70,7 @@ a {
   padding: 100px 0;
 }
 
+/* ─── Shared Buttons ──────────────────────────────────────────── */
 .btn-primary-custom {
   background: var(--roxo);
   color: white;
@@ -72,18 +78,18 @@ a {
   border-radius: 50px;
   font-weight: 600;
   border: none;
-  transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-primary-custom:hover {
   background: var(--roxoclaro);
+  color: white;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
-  color: white;
 }
 
 .btn-outline-custom {
@@ -93,19 +99,20 @@ a {
   border-radius: 50px;
   font-weight: 600;
   border: 2px solid var(--roxo);
-  transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
   text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-outline-custom:hover {
   background: rgba(99, 102, 241, 0.1);
-  transform: translateY(-3px);
   color: white;
+  transform: translateY(-3px);
 }
 
+/* ─── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .section-padding {
     padding: 60px 0;

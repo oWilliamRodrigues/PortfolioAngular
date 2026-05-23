@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Project {
@@ -15,7 +15,8 @@ interface Project {
     CommonModule
   ],
   templateUrl: './projects.html',
-  styleUrl: './projects.css'
+  styleUrl: './projects.css',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class Projects {
@@ -23,7 +24,7 @@ export class Projects {
     {
       title: 'MyRecipeBook',
       description: 'API REST em .NET estruturada com DDD e SOLID. Possui autenticação JWT/Google, integração com Gemini para receitas automáticas e mensageria com Azure Service Bus. Inclui testes automatizados, CI/CD e suporte a MySQL/SQL Server.',
-      image: 'assets/img/api.png',
+      image: 'assets/img/api.webp',
       github: 'https://github.com/oWilliamRodrigues/MyRecipeBook',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -33,7 +34,7 @@ export class Projects {
     {
       title: 'Portfolio',
       description: 'Este site! Desenvolvido com Angular 20, Bootstrap 5 e AOS para animações fluidas e design responsivo.',
-      image: 'assets/img/backgroundimage.jpg',
+      image: 'assets/img/backgroundimage.webp',
       github: 'https://github.com/oWilliamRodrigues/PortfolioAngular',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
@@ -43,7 +44,7 @@ export class Projects {
     {
       title: 'CS Guide',
       description: 'Wiki especializada para Counter-Strike desenvolvida em ASP.NET MVC, com arquitetura em camadas e escalabilidade.',
-      image: 'assets/img/csguide.png',
+      image: 'assets/img/csguide.webp',
       github: 'https://github.com/oWilliamRodrigues/CsGuide',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -53,7 +54,7 @@ export class Projects {
     {
       title: 'Pixel Adventure',
       description: 'Jogo de plataforma 2D vibrante desenvolvido na Unity, explorando física avançada e animações de personagens.',
-      image: 'assets/img/pixeladventure.png',
+      image: 'assets/img/pixeladventure.webp',
       github: 'https://williamrodrigues.itch.io/pixel-adventure',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -63,7 +64,7 @@ export class Projects {
     {
       title: '3D Game Adventure',
       description: 'RPG de ação 3D com câmera isométrica, sistema de combate e IA de inimigos, criado inteiramente na Unity.',
-      image: 'assets/img/3DGameAdventure.png',
+      image: 'assets/img/3DGameAdventure.webp',
       github: 'https://williamrodrigues.itch.io/3dgameadventure',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
@@ -73,7 +74,7 @@ export class Projects {
     {
       title: 'Geen CRUD',
       description: 'Sistema de gestão de clientes desenvolvido em ASP.NET MVC, focado em operações CRUD e UX intuitiva.',
-      image: 'assets/img/MVC.jpg',
+      image: 'assets/img/MVC.webp',
       github: 'https://github.com/oWilliamRodrigues/TelaClientes',
       languages: [
         'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',

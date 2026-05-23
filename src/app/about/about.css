@@ -1,13 +1,15 @@
+/* ─── Section Wrapper ─────────────────────────────────────────── */
 .about {
   background-color: transparent;
   color: var(--text-main);
   width: 100%;
   padding: 1rem 0;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
 }
 
+/* ─── Profile Image ───────────────────────────────────────────── */
 .about-image-wrapper {
   position: relative;
   max-width: 400px;
@@ -21,43 +23,20 @@
   z-index: 1;
 }
 
-.image-experience {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  padding: 1.5rem;
-  z-index: 2;
-  text-align: center;
-  min-width: 150px;
-}
-
-.exp-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--roxoclaro);
-  line-height: 1;
-}
-
-.exp-text {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.Titulo {
+/* ─── Text Content ────────────────────────────────────────────── */
+.titulo {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.AboutMe {
+.about-me {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
 
+/* ─── Skill Tags ──────────────────────────────────────────────── */
 .skill-tag {
   background: var(--glass);
   border: 1px solid var(--glass-border);
@@ -75,21 +54,31 @@
   transform: translateY(-3px);
 }
 
+/* ─── Utilities ───────────────────────────────────────────────── */
 .text-primary {
   color: var(--roxoclaro) !important;
 }
 
+/* ─── Responsive: Tablet / Mobile (≤ 991px) ──────────────────── */
 @media (max-width: 991px) {
-  .Titulo { font-size: 1.4rem; }
-  .AboutMe { font-size: 0.85rem; }
-  .about-image-wrapper { 
-    max-width: 180px;
-    margin-bottom: 1.5rem; 
+  .titulo {
+    font-size: 1.4rem;
   }
+
+  .about-me {
+    font-size: 0.85rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+  }
+
   .btns-about {
     flex-direction: column;
     width: 100%;
   }
+
   .btns-about .btn {
     width: 100%;
   }

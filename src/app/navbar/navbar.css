@@ -1,3 +1,4 @@
+/* ─── Glass Navbar ────────────────────────────────────────────── */
 .glass-navbar {
   background: rgba(15, 23, 42, 0.8);
   backdrop-filter: blur(12px);
@@ -7,16 +8,14 @@
   transition: all 0.3s ease;
 }
 
+/* ─── Brand ───────────────────────────────────────────────────── */
 .navbar-brand {
   font-size: 1.5rem;
   color: var(--text-main);
   letter-spacing: -0.5px;
 }
 
-.text-primary {
-  color: var(--roxoclaro) !important;
-}
-
+/* ─── Nav Links ───────────────────────────────────────────────── */
 .nav-link {
   color: var(--text-main);
   font-weight: 500;
@@ -24,16 +23,6 @@
   cursor: pointer;
   position: relative;
   font-size: 0.9rem;
-}
-
-@media (max-width: 576px) {
-  .nav-link {
-    margin: 0 0.3rem;
-    font-size: 0.75rem;
-  }
-  .navbar-brand {
-    font-size: 1.1rem;
-  }
 }
 
 .nav-link::after {
@@ -58,19 +47,24 @@
   color: var(--roxoclaro);
 }
 
-.navbar-toggler {
-  border: none;
-  padding: 0;
+/* ─── Utilities ───────────────────────────────────────────────── */
+.text-primary {
+  color: var(--roxoclaro) !important;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+/* ─── Responsive: Small screens (≤ 576px) ────────────────────── */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    margin: 0 0.3rem;
+    font-size: 0.75rem;
+  }
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
+/* ─── Responsive: Tablet (≤ 991px) ───────────────────────────── */
 @media (max-width: 991px) {
   .navbar-nav {
     flex-direction: row !important;

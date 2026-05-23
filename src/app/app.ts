@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { trigger, transition, style, animate, query, group } from '@angular/animations';
 import { Home } from './home/home';
 import { About } from './about/about';
@@ -10,9 +9,10 @@ import { Navbar } from './navbar/navbar';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Navbar, Home, About, Projects, Footer],
+  imports: [Navbar, Home, About, Projects, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('sectionAnimation', [
       transition('* => *', [
